@@ -27,10 +27,10 @@ def predict():
 
 @app.route('/result',methods=['POST'])
 def result():
-    charge_time=request.form['cmax_time']
-    discharge_time=request.form['dmax_time']
-    charge_voltage_time=request.form['cmax_vtime']
-    discharge_voltage_time=request.form['dmax_vtime']
+    charge_time=float(request.form['cmax_time'])
+    discharge_time=float(request.form['dmax_time'])
+    charge_voltage_time=float(request.form['cmax_vtime'])
+    discharge_voltage_time=float(request.form['dmax_vtime'])
 
     capacity_pred=(charge_time,discharge_time,charge_voltage_time,discharge_voltage_time)
     capacity_pred_numpy=np.asarray(capacity_pred)
