@@ -269,11 +269,11 @@ header .navbar ul li a:hover{
 
     <form action="{{url_for('result')}}" method="POST">
 
-        <input type="text" class="box" placeholder="Charging Maximum Time" name='cmax_time'>
-        <input type="text" class="box" placeholder="Discharging Maximum Time" name='dmax_time'>
-        <input type="text" class="box" placeholder="Charging Maximum Threshold Voltage Time" name='cmax_vtime'>
-        <input type="text" class="box" placeholder="Discharging Minimum Threshold Voltage Time" name='dmax_vtime'>
-        <input type="submit" class="btn" value="Predict">
+        <input type="number" step="any" class="box" placeholder="Charging Maximum Time" name='cmax_time'>
+        <input type="number" step="any" class="box" placeholder="Discharging Maximum Time" name='dmax_time'>
+        <input type="number" step="any" class="box" placeholder="Charging Maximum Threshold Voltage Time" name='cmax_vtime'>
+        <input type="number" step="any" class="box" placeholder="Discharging Minimum Threshold Voltage Time" name='dmax_vtime'>
+        <input type="submit" step="any" class="btn" value="Predict">
     
     </form>
     
